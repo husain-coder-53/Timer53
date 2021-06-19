@@ -33,7 +33,7 @@ export default class Timer53 {
   start() {
     if (hasManuallyStarted()) {
       executeErrorCallback(
-        "Timer already started. You can use resume or restart methods!"
+        "Timer already started!"
       );
       return;
     }

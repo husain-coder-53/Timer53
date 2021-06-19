@@ -62,6 +62,6 @@ export const Validation = new StateContainer({
     return typeof this === "function";
   },
   interval: function () {
-    return this % 1 == 0;
+    return this % 1 === 0;
   },
 });

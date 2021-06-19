@@ -9,11 +9,10 @@ export function startTimer() {
      * More info: If "change" method is called, then timer will reinitialize
      */
     clearTimer();
-    const useSetIntervalOrTimeout = Config.loop ? "setInterval" : "setTimeout";
     if (State.startTime === 0) {
       State.startTime = Date.now() || new Date.geTime();
     }
-    Timer(useSetIntervalOrTimeout);
+    Timer();
     State.completed = false;
     State.paused = false;
   } catch (err) {
@@ -21,7 +20,8 @@ export function startTimer() {
   }
 }
 
-function Timer(useSetIntervalOrTimeout) {
+function Timer() {
+  const useSetIntervalOrTimeout = Config.loop ? "setInterval" : "setTimeout";
   var interval = State.remainingTime || getInterval();
   if (!interval || interval <= 0) return;
   console.debug(`(Timer53) Iteration complete on: ${interval}`);

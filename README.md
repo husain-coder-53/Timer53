@@ -15,13 +15,15 @@ Timer53 is an extension of `setTimeout/setinterval` method, and provides with fo
 ## Usage
 
 ### Methods
-- `change`
+- `changeConfig`
+- `start`
 - `pause`
-- `stop`
 - `resume`
+- `stop`
 - `restart`
-- `destroy`
 - `getConfig`
+- `callback`
+- `errorCallback`
 
 ### Properties
 
