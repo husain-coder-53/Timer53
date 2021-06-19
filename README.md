@@ -3,7 +3,7 @@ Timer53 is an extension of `setTimeout/setinterval` method, and provides with fo
 - Can change config on the go!
 - Timer will ony start once callback and interval is provided.
 - Can define interval in milliseconds(ms), seconds(s), minutes(m) and hours(h).
-- Can `stop`, `pause`, `resume`, `restart` or `destroy` the timer.
+- Can use manually `start`, `stop`, `pause`, `resume`, `restart` the timer.
 - Can get `remainingTime` and `interval` values.
 
 ## Install
